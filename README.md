@@ -1,2 +1,5 @@
 # VuePractice
-Practice Vue with Udemy course
+Practice Vue with Udemy course!
+
+
+https://www.udemy.com/vuejs-2-the-complete-guide

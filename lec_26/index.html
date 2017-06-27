@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta charset="UTF-8">
+   <style >
+       .demo{
+           width: 100px;
+           height: 100px;
+           background-color: gray;
+           display: inline-block;
+           margin: 10px;
+       }
+
+       .red {
+           background-color: red
+       }
+       .green {
+           background-color: green
+       }
+       .blue {
+           background-color: blue
+       }
+   </style>
+</head>
+
+<body>
+
+   <div class="container">
+       <div id="app">
+           <div class="demo" @click="attachRed = !attachRed"
+           :class="{red: attachRed}"></">
+           </div>
+           <div class="demo" :style="myStyle"></div>
+           <div class="demo" :style="[myStyle, {height: width + 'px'}]"></div>
+           <hr />
+           <input type="text" v-model="color" />
+           <input type="text" v-model="width" />
+
+       </div>
+   </div>
+
+
+
+
+   <script src="vue.js"></script>
+   <script src="app.js"></script>
+</body>
+
+</html>

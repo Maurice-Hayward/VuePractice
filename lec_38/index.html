@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="app">
+            <ul>
+                <li v-for="(ingredient, i) in ingredients">
+                    {{ingredient}} ({{i}})
+                </li>
+            </ul>
+            <ul>
+                <li v-for="person in persons">
+                    <div v-for="(value, key, index) in person"> {{key}} : {{value}} ({{index}})</div>
+                </li>
+            </ul>
+
+            <span v-for="n in 10"> {{n}}</span>
+        </div>
+    </div>
+
+
+
+
+    <script src="vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
